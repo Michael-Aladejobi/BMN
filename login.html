@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!--=============== FAVICON ===============-->
+        <link
+            rel="shortcut icon"
+            href="assets/img/BMN.jpg"
+            type="image/x-icon"
+        />
+
+        <!--=============== REMIXICONS ===============-->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
+            crossorigin=""
+        />
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css" />
+
+        <title>BMN | LOGIN</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="index.html" class="nav__logo">
+                    <img src="assets/img/BMN.jpg" alt="logo" />
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Home </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Events</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Contact</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__buttons">
+                        <a href="#" class="nav__button-link"
+                            >Login <i class="ri-check-double-line"></i
+                        ></a>
+                        <a href="signup.html" class="nav__button-ghost"
+                            >Get Started</a
+                        >
+                    </div>
+
+                    <!-- Close button -->
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <!-- Toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== LOGIN ====================-->
+            <section class="login">
+                <div class="login__container container">
+                    <div class="login-data">
+                        <!-- Login form -->
+                        <form class="login-form">
+                            <!-- Original comment: Heading for the login section -->
+                            <h3
+                                class="sign-in-up"
+                                style="color: rgb(0, 0, 0); font-weight: bold"
+                            >
+                                Login
+                            </h3>
+
+                            <!-- Email input field -->
+                            <label for="email">Email</label>
+                            <input
+                                type="text"
+                                placeholder="Enter email address e.g BMN@gmail.com"
+                                id="email-el"
+                                required
+                            />
+
+                            <!-- Password input field -->
+                            <label for="password">Password</label>
+                            <input
+                                type="password"
+                                placeholder="Enter your Password"
+                                id="password-el"
+                                required
+                            />
+
+                            <!-- Forget password link -->
+                            <div class="forget-password">
+                                <a href="#" id="forget-password">
+                                    Forget Password?
+                                </a>
+                            </div>
+
+                            <!-- Submit button -->
+                            <button id="submit-btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="maintenance">
+            <small>&copy All rights Reserved | Maintained by BMN TEAM</small>
+        </footer>
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/index.js"></script>
+
+        <!--=============== Login JS ===============-->
+        <script src="assets/js/login.js" type="module" defer></script>
+    </body>
+</html>
