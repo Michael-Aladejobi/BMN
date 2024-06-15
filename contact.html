@@ -18,34 +18,38 @@
             crossorigin=""
         />
 
+        <!-- *******  Font Awesome Icons Link  ******* -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+	<!-- *******  Link To Goggle Fonts  *******  -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,800;1,900&display=swap" rel="stylesheet">
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css" />
-
-        <title>BMN | ABOUT</title>
+        <title>BMN | CONTACT</title>
     </head>
-    <body>
+    <body style="background-color: #2e2e2e;">
         <!--==================== HEADER ====================-->
-        <header class="header" id="header">
+        <header class="header" id="header" style="background-color: #2e2e2e; ">
             <nav class="nav container">
-                <a href="#" class="nav__logo">
+                <a href="home.html" class="nav__logo">
                     <img src="assets/img/BMN.jpg" alt="logo" />
                 </a>
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
                         <li class="nav__item">
-                            <a href="home.html" class="nav__link"
+                            <a href="home.html" class="nav__link"  id="contact_nav_link"
                                 >Home </i
                             ></a>
                         </li>
                         <li class="nav__item">
-                            <a href="about.html" class="nav__link">About </a>
+                            <a href="about.html" class="nav__link" id="contact_nav_link">About </a>
                         </li>
                         <li class="nav__item">
-                            <a href="events.html" class="nav__link">Events </a>
+                            <a href="events.html" class="nav__link" id="contact_nav_link">Events </a>
                         </li>
                         <li class="nav__item">
-                            <a href="#" class="nav__link">Contact <i class="ri-check-double-line"></i></a>
+                            <a href="#" class="nav__link" id="contact_nav_link">Contact <i class="ri-check-double-line"></i></a>
                         </li>
                     </ul>
 
@@ -61,11 +65,12 @@
                             id="nav__button-ghost_"
                         ></a>
                         <a
-                            href="#"
+                            href="index.html"
                             class="nav__button-ghost"
                             id="nav__button-ghost_"
-                        ></a>
-
+                            >SignOut</a
+                        >
+<!-- nav close -->
                         <div class="nav__close" id="nav-close">
                             <i class="ri-close-line"></i>
                         </div>
@@ -74,48 +79,155 @@
 
                 <!-- Toggle button -->
                 <div class="nav__toggle" id="nav-toggle">
-                    <i class="ri-menu-line"></i>
+                    <i class="ri-menu-line" style="color: #ddd;"></i>
                 </div>
             </nav>
         </header>
 
         <!--==================== MAIN ====================-->
         <main class="main">
-            <!--==================== HOME ====================-->
+            <!--==================== SAME BACKGROUND AND IMAGES - HOME ====================-->
             <section class="home">
-                <div class="home__container container">
-                    <div class="home__content">
-                        <div class="home__data"></div>
-                    </div>
-                    <div class="home__images">
-                        <img
-                            src="assets/img/img-4.svg"
-                            alt="image"
-                            class="home_img-4"
-                        />
-                        <img
-                            src="assets/img/img-3.svg"
-                            alt="image"
-                            class="home_img-3"
-                        />
-                        <img
-                            src="assets/img/img-2.svg"
-                            alt="image"
-                            class="home_img-2"
-                        />
-                        <!-- <img
-                            src="assets/img/img-1.svg"
-                            alt="image"
-                            class="home_img-1"
-                        /> -->
-                    </div>
-                </div>
-            </section>
-        </main>
+                
+                        <div class="home__content">
+                            <div class="home__data"></div>
+                        </div>
+                        <div class="home__images">
+                            <img
+                                src="assets/img/img-4.svg"
+                                alt="image"
+                                class="home_img-4"
+                            />
+                            <img
+                                src="assets/img/img-3.svg"
+                                alt="image"
+                                class="home_img-3"
+                            />
+                            <img
+                                src="assets/img/img-2.svg"
+                                alt="image"
+                                class="home_img-2"
+                            />
+                
+                        </div>
+                        
+                    
+                <div class="contact-container">
+		<main class="row">
+			
+			<!--  *******   Left Section (Column) Starts   *******  -->
+
+			<section class="col left">
+				
+				<!--  *******   Title Starts   *******  -->
+
+				<div class="contactTitle">
+					<h2>Get In Touch</h2>
+					<p>We care about you, kindly feel free to reach out to us.</p>
+				</div>
+
+				
+
+				<!--  *******   Contact Info Starts   *******  -->
+
+				<div class="contactInfo">
+					
+					<div class="iconGroup">
+						<div class="icon">
+							<i class="fa-solid fa-phone"></i>
+						</div>
+						<div class="details">
+							<span>Phone</span>
+							<span>+234 7035757882 </span>
+						</div>
+					</div>
+
+					<div class="iconGroup">
+						<div class="icon">
+							<i class="fa-solid fa-envelope"></i>
+						</div>
+						<div class="details">
+							<span>Email</span>
+							<span>beyondmusicnetwork@gmail.com</span>
+						</div>
+					</div>
+
+					<div class="iconGroup">
+						<div class="icon">
+							<i class="fa-solid fa-location-dot"></i>
+						</div>
+						<div class="details">
+							<span>Location</span>
+							<span>1 PMM Close, Ajegunle, Ikorodu Rd. Lagos, Nigeria.</span>
+						</div>
+					</div>
+
+				</div>
+
+				<!--  *******   Contact Info Ends   *******  -->
+
+				<!--  *******   Social Media Starts   *******  -->
+
+				<div class="socialMedia">
+					<a href="https://facebook.com/bmn"><i class="fa-brands fa-facebook-f"></i></a>
+					<!-- <a href="#"><i class="fa-brands fa-twitter"></i></a> -->
+					<a href="https://instagram.com/beyondmusicnet"><i class="fa-brands fa-instagram"></i></a>
+					<a href="https://wa.me/+234...."><i class="fa-brands fa-whatsapp"></i></a>
+				</div>
+
+				<!--  *******   Social Media Ends   *******  -->
+
+			</section>
+
+			<!--  *******   Left Section (Column) Ends   *******  -->
+
+			<!--  *******   Right Section (Column) Starts   *******  -->
+
+			<section class="col right">
+				
+				<!--  *******   Form Starts   *******  -->
+
+				<form class="messageForm" id="contactUs">
+					
+					<div class="inputGroup halfWidth">
+						<input type="text" name="" required="required" id="yourname-el">
+						<label>Your Name</label>
+					</div>
+
+					<div class="inputGroup halfWidth">
+						<input type="email" name="" required="required" id="email-el">
+						<label>Email</label>
+					</div>
+<div class="inputGroup halfWidth">
+						<input type="text" name="" required="required" id="phone-el">
+						<label>Phone</label>
+					</div>
+					<div class="inputGroup halfWidth">
+						<input type="text" name="" required="required" id="messageTitle-el">
+						<label>Message Title</label>
+					</div>
+					
+
+					<div class="inputGroup fullWidth">
+						<textarea required="required" style="padding-top: 25px;" id="messageBody-el"></textarea>
+						<label>Say Something</label>
+					</div>
+
+					<div class="inputGroup fullWidth">
+						<button id="contactUs">Send Message</button>
+					</div>
+
+				</form>
+
+			</section>	
+       
         <footer class="maintenance">
-            <small>&copy All rights Reserved | Maintained by BMN TEAM</small>
+            <small style="color: #888787;">&copy All rights Reserved | Maintained by BMN TEAM</small>
         </footer>
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/index.js"></script>
+
+                <script src="assets/js/contact.js" type="module" defer></script>
+
     </body>
 </html>
