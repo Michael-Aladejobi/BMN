@@ -47,7 +47,7 @@ contactUs.addEventListener("submit", async (e) => {
             }
         );
 
-        alert("Processing..."); // Display a processing message
+       
         alert("Message sent Successfully!"); // Display success message
 
         // Clear the form
