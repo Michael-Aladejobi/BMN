@@ -1,39 +1,62 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.8.1/firebase-app.js";
+// Import Firebase modules
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
 import {
-    getAuth,
-    onAuthStateChanged,
-    signOut,
-} from "https://www.gstatic.com/firebasejs/9.8.1/firebase-auth.js";
+    getFirestore,
+    collection,
+    addDoc,
+} from "https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyBAgeUvIPwMirPSPywX9YZJZ79htSpKO5c",
-    authDomain: "wrud-5b418.firebaseapp.com",
-    databaseURL: "https://wrud-5b418-default-rtdb.firebaseio.com",
-    projectId: "wrud-5b418",
-    storageBucket: "wrud-5b418.appspot.com",
-    messagingSenderId: "867302937144",
-    appId: "1:867302937144:web:152fa283505a65facd4ccd",
+    apiKey: "AIzaSyAho3RaSMQyi6es_U_AvDsVsnG_Z9A-iy4",
+    authDomain: "beyond-music-network.firebaseapp.com",
+    projectId: "beyond-music-network",
+    storageBucket: "beyond-music-network.appspot.com",
+    messagingSenderId: "413847522878",
+    appId: "1:413847522878:web:16fd3ca902a99d818b4b6f",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app); // Get the Auth instance
-const user = auth.currentUser; // Get the current user
+const db = getFirestore(app);
 
-console.log(user); // Log the current user to the console
-onAuthStateChanged(auth, (user) => {
-    if (user) {
-        // If user is signed in
-        updateUserProfile(user); // Update user profile
-        const uid = user.uid; // Get user ID
-        return uid; // Return user ID
+// Reference to the form element
+const contactUs = document.getElementById("contactUs");
 
-        // ...
-    } else {
-        // User is signed out, redirect  to the reggistration page
-        // ...
-        alert("Create Account or Login!"); // Display alert message
-        window.location.href = "login.html"; // Redirect to login page
+// Add a submit event listener to the form
+contactUs.addEventListener("submit", async (e) => {
+    e.preventDefault(); // Prevent default form submission behavior
+
+    // Get form data
+    const yourName = document.getElementById("yourname-el").value;
+    const email = document.getElementById("email-el").value;
+    const phone = document.getElementById("phone-el").value;
+    const messageTitle = document.getElementById("messageTitle-el").value;
+    const messageBody = document.getElementById("messageBody-el").value;
+
+    try {
+        // Add a new document with the form data to the "patients" collection
+        const docRef = await addDoc(
+            collection(db, "Contact Us Form Submissions"),
+            {
+                fullname: yourName,
+                email: email,
+                phoneNumber: phone,
+                messageTitle: messageTitle,
+                messageBody: messageBody,
+            }
+        );
+
+        alert("Processing..."); // Display a processing message
+        alert("Message sent Successfully!"); // Display success message
+
+        // Clear the form
+        contactUs.reset();
+
+        // Redirect to Home page
+        window.location.href = "home.html";
+    } catch (e) {
+        console.error("Error sending message: ", e); // Log error to console
+        alert("Error sending message: " + e); // Display error message
     }
 });
