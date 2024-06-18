@@ -427,7 +427,7 @@ input {
     border-radius: 20px;
     box-shadow: 0 30px 50px #505050;
     background-position: 50% 50%;
-    background-size: cover;
+    background-size: contain;
     display: inline-block;
     transition: 0.5s;
 }
@@ -481,6 +481,7 @@ input {
     font-weight: bold;
     opacity: 0;
     animation: new-animate 1s ease-in-out 1 forwards;
+    color: #222222;
 }
 
 .new-content .new-des {
@@ -488,14 +489,24 @@ input {
     margin-bottom: 20px;
     opacity: 0;
     animation: new-animate 1s ease-in-out 0.3s 1 forwards;
+    color: #000;
 }
 
 .new-content button {
-    padding: 10px 20px;
+    padding: 10px 15px;
     border: none;
     cursor: pointer;
     opacity: 0;
     animation: new-animate 1s ease-in-out 0.6s 1 forwards;
+    color: black;
+    font-size: 15px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.new-content button:hover {
+    padding: 10px 20px;
+    transition: 0.3s;
 }
 
 @keyframes new-animate {
