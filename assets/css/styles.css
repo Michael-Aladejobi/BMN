@@ -461,7 +461,7 @@ input {
 .new-item .new-content {
     position: absolute;
     top: 50%;
-    padding-left: 170px;
+    padding-left: 16%;
     left: 100px;
     width: 300px;
     text-align: left;
