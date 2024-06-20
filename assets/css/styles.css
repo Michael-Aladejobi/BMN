@@ -16,7 +16,7 @@
     --title-color: hsl(210, 52%, 20%);
     --text-color: hsl(210, 24%, 15%);
     --white-color: #fff;
-    --body-color: hsl(210, 55%, 85%);
+    --body-color: hsl(0, 0%, 100%);
 
     /*========== Font and typography ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
@@ -423,7 +423,7 @@ input {
     height: 300px;
     position: absolute;
     top: 50%;
-  
+
     transform: translate(0, -50%);
     border-radius: 20px;
     box-shadow: 0 30px 50px #505050;
