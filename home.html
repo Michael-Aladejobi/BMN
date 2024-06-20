@@ -4,27 +4,27 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!--=============== FAVICON ===============-->
+        <!-- FAVICON -->
         <link
             rel="shortcut icon"
             href="assets/img/BMN.jpg"
             type="image/x-icon"
         />
 
-        <!--=============== REMIXICONS ===============-->
+        <!-- REMIXICONS -->
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css"
             crossorigin=""
         />
 
-        <!--=============== CSS ===============-->
+        <!-- CSS -->
         <link rel="stylesheet" href="assets/css/styles.css" />
 
         <title>BMN | HOME</title>
     </head>
     <body>
-        <!--==================== HEADER ====================-->
+        <!-- HEADER -->
         <header class="header" id="header">
             <nav class="nav container">
                 <a href="#" class="nav__logo">
@@ -50,23 +50,9 @@
                     </ul>
 
                     <div class="nav__buttons">
-                        <a
-                            href="#"
-                            class="nav__button-ghost"
-                            id="nav__button-ghost_"
-                        ></a>
-                        <a
-                            href="#"
-                            class="nav__button-ghost"
-                            id="nav__button-ghost_"
-                        ></a>
-                        <a
-                            href="index.html"
-                            class="nav__button-ghost"
-                            id="nav__button-ghost_"
+                        <a href="index.html" class="nav__button-ghost"
                             >SignOut</a
                         >
-
                         <div class="nav__close" id="nav-close">
                             <i class="ri-close-line"></i>
                         </div>
@@ -80,13 +66,18 @@
             </nav>
         </header>
 
-        <!--==================== MAIN ====================-->
+        <!-- MAIN -->
         <main class="main">
-            <!--==================== HOME ====================-->
+            <!-- HOME -->
             <section class="home">
                 <div class="home__container container">
                     <div class="home__content">
-                        <div class="home__data"></div>
+                        <h1>Welcome to BMN</h1>
+                        <p>
+                            We are dedicated to fostering a community of
+                            learning and growth.
+                        </p>
+                        <a href="about.html" class="home__btn">Learn More</a>
                     </div>
                     <div class="home__images">
                         <img
@@ -113,13 +104,17 @@
                 </div>
             </section>
         </main>
-        <footer class="maintenance">
-            <small>&copy All rights Reserved | Maintained by BMN TEAM</small>
-        </footer>
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/index.js"></script>
 
-        <!--=============== Home JS ===============-->
-        <script src="assets/js/home.js" type="module" defer></script>
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <small
+                    >&copy; All rights Reserved | Maintained by BMN TEAM</small
+                >
+            </div>
+        </footer>
+
+        <!-- JS -->
+        <script src="assets/js/index.js"></script>
     </body>
 </html>

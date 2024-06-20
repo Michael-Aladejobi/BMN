@@ -17,12 +17,11 @@ if (navClose) {
     });
 }
 /*=============== REMOVE Menu mobile ===============*/
-const navLink = document.querySelector(".nav__link");
+const navLinks = document.querySelectorAll(".nav__link");
 const linkAction = () => {
     const navMenu = document.querySelector("#nav-menu");
 
     //click each listItems to remove the show-menu
     navMenu.classList.remove("show-menu");
 };
-navMenu.forEach((n) => n.addEventListener("click", linkAction));
-
+navLinks.forEach((link) => link.addEventListener("click", linkAction));
