@@ -16,7 +16,7 @@
     --title-color: hsl(210, 52%, 20%);
     --text-color: hsl(210, 24%, 15%);
     --white-color: #fff;
-    --body-color: hsl(0, 0%, 100%);
+    --body-color: hsl(210, 55%, 85%);
 
     /*========== Font and typography ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
@@ -144,7 +144,7 @@ img {
     transition: 0.5s;
 }
 
-/* HOME PAGE */
+/* GENERAL NAV */
 
 /* three boxes on nav bar */
 #nav__button-ghost_ {
@@ -406,7 +406,198 @@ input {
     bottom: 0;
 }
 
+/* ABOUT PAGE */
+
+.about-wrapper {
+    height: 100vh;
+}
+.about-left {
+    background-color: hsl(210, 55%, 85%);
+    background-image: linear-gradient(
+        -360deg,
+        hsl(0, 0%, 0%) 0%,
+        hsl(210, 55%, 85%) 80%
+    );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+}
+.about-left-content > div {
+    background: #12192c;
+    padding: 4rem 4rem 2.5rem 5rem;
+    text-align: center;
+
+    border-radius: 12px 12px 0 0;
+}
+.about-left-content {
+    box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+    -webkit-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 0px 0px 18px -1px rgba(0, 0, 0, 0.39);
+    border-radius: 12px;
+    width: 80%;
+}
+.about-img img {
+    display: block;
+    width: 200px;
+}
+.about-img {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+}
+.shadow {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.about-left-content h2 {
+    font-size: 2rem;
+    margin: 2.2rem 0 0.6rem 0;
+    line-height: 1.2;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid grey;
+}
+.about-left-content h3 {
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 5px;
+    margin-top: 1.2rem;
+}
+.icons {
+    background: #12192c;
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem 0;
+    border-radius: 0 0 12px 12px;
+}
+.icons li {
+    list-style-type: none;
+    background: #1a2541;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+.icons li:hover {
+    background: #edffec;
+    color: #000;
+}
+.about-right {
+    background: #12192c;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5rem;
+    text-align: center;
+    color: #fff;
+}
+.about-right h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+.about-right h1 span {
+    color: grey;
+}
+.about-right h2 {
+    font-weight: 600;
+}
+.about-btns {
+    display: flex;
+    margin: 2rem 0;
+}
+.btn {
+    border: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    padding: 0.55rem 0;
+    width: 130px;
+    font-weight: 600;
+    background: transparent;
+    margin: 0 0.5rem;
+    color: #fff;
+}
+.btn.btn-pink {
+    background: grey;
+    color: #fff;
+    border-color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+.btn.btn-pink:hover {
+    background: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+.btn.btn-white {
+    transition: all 0.5s ease-in-out;
+}
+.btn.btn-white:hover {
+    background: grey;
+    border-color: #fff;
+    color: #fff;
+}
+.about-para p {
+    font-weight: 300;
+    padding: 0.5rem;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 992px) {
+    .about-wrapper {
+        display: grid;
+        .about-left {
+            display: none;
+        }
+        .about-right {
+            align-items: center;
+        }
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about-left {
+        position: relative;
+    }
+    .about-left-content {
+        position: absolute;
+        width: 80%;
+    }
+}
+@media screen and (min-width: 992px) {
+    .about-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-left {
+        position: relative;
+    }
+    .about-left-content {
+        position: absolute;
+        width: 80%;
+    }
+}
+
 /* EVENTS PAGE */
+
+.event-container {
+    /* Will figure out later */
+}
 .new-container {
     position: absolute;
     top: 50%;
@@ -414,7 +605,6 @@ input {
     transform: translate(-50%, -50%);
     width: 1000px;
     height: 600px;
-    background: #f5f5f5;
     box-shadow: 0 30px 50px #dbdbdb;
 }
 
@@ -423,6 +613,7 @@ input {
     height: 300px;
     position: absolute;
     top: 50%;
+    margin: 0 12%;
 
     transform: translate(0, -50%);
     border-radius: 20px;
@@ -478,20 +669,36 @@ input {
 }
 
 .new-content .new-name {
-    font-size: 40px;
+    text-align: center;
+    width: auto;
+    padding: auto;
+    font-size: 20px;
     text-transform: uppercase;
     font-weight: bold;
     opacity: 0;
     animation: new-animate 1s ease-in-out 1 forwards;
-    color: #222222;
+    color: #fff;
+    background-color: #000000c5;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    margin: 10px 100px 10px 0;
+    border: 2px solid #fff;
+    border-radius: 20px;
 }
 
 .new-content .new-des {
+    text-align: center;
     margin-top: 10px;
     margin-bottom: 20px;
     opacity: 0;
     animation: new-animate 1s ease-in-out 0.3s 1 forwards;
-    color: #000;
+    color: #fff;
+    background-color: #000000c5;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    margin: 10px 100px 10px 0;
+    border: 2px solid #fff;
+    border-radius: 20px;
 }
 
 .new-content button {
@@ -529,12 +736,12 @@ input {
     width: 100%;
     text-align: center;
     position: absolute;
-    bottom: 20px;
+    bottom: 10%;
 }
 
 .new-button button {
-    width: 40px;
-    height: 35px;
+    width: 50px;
+    height: 40px;
     border-radius: 8px;
     border: none;
     cursor: pointer;
@@ -550,20 +757,21 @@ input {
 
 /* CONTACT PAGE*/
 
-/* header */
-#contact_nav_link {
-    color: #8f8f8f;
-}
-#contact_nav_link:hover {
-    color: #ddd;
-}
 .contact-container {
+    height: auto;
     width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 30px 8%;
+
+    background-color: hsl(210, 55%, 85%);
+    background-image: linear-gradient(
+        -360deg,
+        hsl(0, 0%, 0%) 0%,
+        hsl(210, 55%, 85%) 93.2%
+    );
 }
 .container .row {
     display: flex;
@@ -586,7 +794,7 @@ input {
 section.left .contactTitle h2 {
     position: relative;
     font-size: 28px;
-    color: #ddd;
+    color: #353535;
     display: inline-block;
     margin-bottom: 25px;
     padding-top: 110px;
@@ -594,7 +802,7 @@ section.left .contactTitle h2 {
 
 section.left .contactTitle p {
     font-size: 17px;
-    color: #ccc;
+    color: #353535;
     letter-spacing: 1px;
     line-height: 1.2;
     padding-bottom: 22px;
@@ -610,7 +818,7 @@ section.left .contactInfo {
 .iconGroup .icon {
     width: 45px;
     height: 45px;
-    border: 2px solid dodgerblue;
+    border: 2px solid grey;
     border-radius: 50%;
     margin-right: 20px;
     position: relative;
@@ -625,12 +833,12 @@ section.left .contactInfo {
 }
 .iconGroup .details span {
     display: block;
-    color: #888;
+    color: #353535;
     font-size: 18px;
 }
 .iconGroup .details span:nth-child(1) {
     text-transform: uppercase;
-    color: #ccc;
+    color: #000000;
 }
 section.left .socialMedia {
     display: flex;
@@ -646,7 +854,7 @@ section.left .socialMedia {
     text-align: center;
     margin-right: 15px;
     border-radius: 5px;
-    background-color: dodgerblue;
+    background-color: grey;
     transition: 0.4s;
 }
 .socialMedia a i {
@@ -659,11 +867,11 @@ section.left .socialMedia {
 .socialMedia a:hover {
     transform: translateY(-5px);
     background-color: #2e2e2e;
-    color: dodgerblue;
-    border: 1px solid dodgerblue;
+    color: grey;
+    border: 1px solid grey;
 }
 .socialMedia a:hover i {
-    color: dodgerblue;
+    color: grey;
 }
 
 /* Code for the right section (column) */
@@ -708,7 +916,7 @@ textarea::-webkit-scrollbar-track {
     border-radius: 15px;
 }
 textarea::-webkit-scrollbar-thumb {
-    background-color: dodgerblue;
+    background-color: grey;
     border-radius: 15px;
 }
 .inputGroup label {
@@ -733,7 +941,7 @@ textarea::-webkit-scrollbar-thumb {
 .inputGroup button {
     padding: 8px 16px;
     font-size: 18px;
-    background-color: dodgerblue;
+    background-color: grey;
     color: #ddd;
     border: 1px solid transparent;
     border-radius: 25px;
@@ -744,9 +952,9 @@ textarea::-webkit-scrollbar-thumb {
 }
 .inputGroup button:hover {
     background-color: #2e2e2e;
-    color: dodgerblue;
+    color: grey;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
-    border: 1px solid dodgerblue;
+    border: 1px solid grey;
 }
 @media (max-width: 1100px) {
     .messageForm .halfWidth {
