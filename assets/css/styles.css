@@ -825,7 +825,7 @@ section.left .contactInfo {
 }
 .iconGroup .icon i {
     font-size: 20px;
-    color: #ddd;
+    color: #080808;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -854,7 +854,7 @@ section.left .socialMedia {
     text-align: center;
     margin-right: 15px;
     border-radius: 5px;
-    background-color: grey;
+    background-color: rgb(34, 32, 32);
     transition: 0.4s;
 }
 .socialMedia a i {
@@ -866,12 +866,12 @@ section.left .socialMedia {
 }
 .socialMedia a:hover {
     transform: translateY(-5px);
-    background-color: #2e2e2e;
+    background-color: #ffffff;
     color: grey;
     border: 1px solid grey;
 }
 .socialMedia a:hover i {
-    color: grey;
+    color: rgb(0, 0, 0);
 }
 
 /* Code for the right section (column) */
