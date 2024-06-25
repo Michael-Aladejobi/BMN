@@ -960,16 +960,15 @@ textarea::-webkit-scrollbar-thumb {
     .contact-container {
         padding: 0px 10%;
     }
+}
 @media (max-width: 1100px) {
     .messageForm .halfWidth {
         flex-basis: 100%;
     }
 }
 @media (max-width: 900px) {
-    
     .container .row {
         flex-wrap: wrap;
-        
     }
     .row section.left,
     .row section.right {
@@ -983,7 +982,6 @@ textarea::-webkit-scrollbar-thumb {
 @media screen and (max-width: 305px) {
     .container {
         margin-inline: 1rem;
-        
     }
 
     .home__title {
@@ -995,7 +993,6 @@ textarea::-webkit-scrollbar-thumb {
 @media screen and (min-width: 376px) and (min-height: 800px) {
     .home__container {
         padding-top: 10rem;
-
     }
     .home__images img {
         width: 700px;
