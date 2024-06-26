@@ -27,7 +27,7 @@ document
     .getElementById("submit-btn")
     .addEventListener("click", function (event) {
         event.preventDefault();
-        alert("Checking Details...\nPlease Wait!");
+        alert("Processing...\nPlease Wait!");
         // Get inputs
         const email = document.getElementById("email-el").value;
         const password = document.getElementById("password-el").value;
