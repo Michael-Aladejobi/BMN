@@ -64,6 +64,7 @@ reset.addEventListener("click", function (event) {
             const errorCode = error.code;
             const errorMessage = error.message;
             // ..
+            alert("Please enter your email.");
             alert(errorMessage);
         });
 });
