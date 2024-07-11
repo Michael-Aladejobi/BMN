@@ -1,3 +1,4 @@
+// ...
 let next = document.querySelector(".new-next");
 let prev = document.querySelector(".new-prev");
 
