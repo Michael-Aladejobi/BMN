@@ -408,13 +408,36 @@ input {
 
 /*MY CODE STARTS FROM HERE (OGOOLUWA)*/
 h1 {
-    margin-top: 70px;
+    margin-top: 50px;
     font-size: 50px;
     font-weight: bolder;
 }
 span {
     color: brown;
     font-weight: bolder;
+}
+.label {
+    margin-top: 30px;
+    font-family: Montserrat, sans-serif;
+    text-align: left;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    opacity: 0.9;
+}
+.homesection {
+    border: 1px solid brown;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: 10px;
+    text-align: end;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 30px;
 }
 .learnbtn {
     margin-top: 60px;
