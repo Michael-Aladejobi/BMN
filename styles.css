@@ -440,10 +440,10 @@ span {
     margin-top: 30px;
 }
 .learnbtn {
-    margin-top: 60px;
+    margin-bottom: 5px;
 }
 .learn {
-    padding: 15px 30px;
+    padding: 10px 15px;
     font-size: 18px;
     background-color: #1a2541;
     color: #ddd;
