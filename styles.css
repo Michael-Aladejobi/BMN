@@ -406,9 +406,9 @@ input {
     bottom: 0;
 }
 
-/*MY CODE STARTS FROM HERE (OGOOLUWA)*/
+/*MY CODE STARTS FROM HERE ( OGOOLUWA)*/
 h1 {
-    margin-top: 10px;
+    margin-top: 0px;
     font-size: 50px;
     font-weight: bolder;
 }
@@ -417,7 +417,7 @@ span {
     font-weight: bolder;
 }
 .label {
-    margin-top: 0px;
+    margin-top: 10px;
     font-family: Montserrat, sans-serif;
     text-align: left;
     box-sizing: border-box;
