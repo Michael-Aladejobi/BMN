@@ -286,6 +286,17 @@ input {
     align-items: center;
     row-gap: 0.75rem;
 }
+.nav__buttons:hover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.75rem;
+    border-radius:  10px;
+   background-color: #18334E;
+   a{
+    color: #fff
+}
+}
 
 .nav__button-link,
 .nav__button-ghost {
